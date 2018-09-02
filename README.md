@@ -80,7 +80,11 @@ Launch the app as two separate browser tabs. For best results, choose two differ
 
 ### Step 3 - Activate / Deactivate Speech prompt for chat messages
 
-Now, you can chat between the two users just like regular chat app. For activating the speech prompt, click on the top right icon. It will turn green to indicate that speech is enabled, and all subsequent chat messages will also be accompanied with a speech that you can hear from teh speaker. 
+Now, you can chat between the two users just like regular chat app. 
 
-<screencast>
+For activating the speech prompt, click on the top right icon. It will turn green to indicate that speech is enabled, and all subsequent chat messages will also be accompanied with a speech that you can hear from the speaker. 
+
+[Video Demo](
+https://github.com/shyampurk/SpeechEnabledChatApp/blob/master/screenshots/screencast.mp4)
+
 
