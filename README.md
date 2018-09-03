@@ -34,9 +34,9 @@ Now your app infrastucture is created. For enabling speech feature, head over to
 
 Follow these steps to setup your AWS account for accessing Amazon Polly service
 
-### Step 1 : Setup an IAM user to access AWS Translate service
+### Step 1 : Setup an IAM user to access Amazon Polly service
 
-Follow [these steps](https://docs.aws.amazon.com/polly/latest/dg/setting-up.html) to create an IAM user for AWS Polly. Make sure that the IAM user has full permissions for accessing Amazon Polly service. 
+Follow [these steps](https://docs.aws.amazon.com/polly/latest/dg/setting-up.html) to create an IAM user for Amazon Polly. Make sure that the IAM user has full permissions for accessing Amazon Polly service. 
 
 ### Step 2 : Download the IAM user credentials
 
@@ -52,7 +52,7 @@ The server hosts the chat app as well as streams the binay audio payload for syn
 
 Since the server calls the Amazon Polly servce, we need to ensure that we follow AWS's norms of defining the credentials of the user on whose behalf the service will be called.
 
-To do this, update the line 71 with AWS user's acess key (AWS ACCESS KEY) and line 72 with AWS user's secret key (AWS ACCESS SECRET KEY).
+To do this, update the line 71 with AWS user's acess key (AWS ACCESS KEY) and line 72 with AWS user's secret key (AWS ACCESS SECRET KEY), in [server.py](/server.py).
 
 ### Step 2 - Run the server
 
@@ -60,7 +60,7 @@ To run the server execute the [server.py](/server.py) script under python 3 envi
 
     python server.py
     
-Note : Make sure that the python command and the scritp file are in correct path.
+Note : Make sure that the python command and the script file are in correct path.
 
 ## [Deploy App](#deploy-app)
 
@@ -68,7 +68,7 @@ We are all set now. Follow the steps below to setup the chat app and deploy it.
 
 ### Step 1 - Update PubNub credentials
 
-Before launching the app make sure to update the PubNub keys in the [chat.js](/chat.js) file.
+Before launching the app, make sure to update the PubNub keys in the [chat.js](/chat.js) file.
 
 Update Line 7 with the PubNub publish key and line 8 with PubNub subscribe key.
 
@@ -80,11 +80,13 @@ Launch the app as two separate browser tabs. For best results, choose two differ
 
 ### Step 3 - Activate / Deactivate Speech prompt for chat messages
 
-Now, you can chat between the two users just like regular chat app. 
+Now, you can chat between the two users just like a regular chat app. 
 
 For activating the speech prompt, click on the top right icon. It will turn green to indicate that speech is enabled, and all subsequent chat messages will also be accompanied with a speech that you can hear from the speaker. 
 
 [Video Demo](
 https://github.com/shyampurk/SpeechEnabledChatApp/blob/master/screenshots/screencast.mp4)
 
+## Caution
 
+This app may not work on Microsoft Edge. 
