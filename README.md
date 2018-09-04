@@ -1,6 +1,6 @@
 # Speech Enabled Chat App
 
-This repo contains the source code for a sample application that deminstrates how to build accessible apps for chat clients, built with PubNub ChatEngine and Amazon Polly.
+This repo contains the source code for a sample application that demonstrates how to build accessible apps for chat clients, built with PubNub ChatEngine and Amazon Polly.
 
 The source code for this chat app is in Javascript and python. The UI frontend uses the standard javascript libraries like JQuery, so some level of familiarity with JQuery and standard Javascript language is expected.
 
@@ -28,11 +28,11 @@ Follow these steps in [ChatEngine QuickStart Tutorial](https://www.pubnub.com/do
 
 <img src="screenshots/step4-chatengine-app-creation.png" width="600">
 
-Now your app infrastucture is created. For enabling speech feature, head over to the next section.
+Now your app infrastructure is created. For enabling speech feature, head over to the next section.
 
 ## [Set Up Amazon Polly Service](#set-up-amazon-polly-service)
 
-Follow these steps to setup your AWS account for accessing Amazon Polly service
+Follow these steps to set up your AWS account for accessing Amazon Polly service
 
 ### Step 1 : Setup an IAM user to access Amazon Polly service
 
@@ -46,13 +46,13 @@ Download the credentials file for the IAM user and save it. This file contains t
 
 ## [Set Up Speech Streaming Server](#set-up-speech-streaming-server)
 
-The server hosts the chat app as well as streams the binay audio payload for synthesized speech.
+The server hosts the chat app as well as streams the binary audio payload for synthesized speech.
 
 ### Step 1 - Update AWS credentials in the server
 
-Since the server calls the Amazon Polly servce, we need to ensure that we follow AWS's norms of defining the credentials of the user on whose behalf the service will be called.
+Since the server calls the Amazon Polly service, we need to ensure that we follow AWS's norms of defining the credentials of the user on whose behalf the service will be called.
 
-To do this, update the line 71 with AWS user's acess key (AWS ACCESS KEY) and line 72 with AWS user's secret key (AWS ACCESS SECRET KEY), in [server.py](/server.py).
+To do this, update the line 71 with AWS user's access key (AWS ACCESS KEY) and line 72 with AWS user's secret key (AWS ACCESS SECRET KEY), in [server.py](/server.py).
 
 ### Step 2 - Run the server
 
@@ -64,7 +64,7 @@ Note : Make sure that the python command and the script file are in correct path
 
 ## [Deploy App](#deploy-app)
 
-We are all set now. Follow the steps below to setup the chat app and deploy it.
+We are all set now. Follow the steps below to set up the chat app and deploy it.
 
 ### Step 1 - Update PubNub credentials
 
@@ -74,7 +74,7 @@ Update Line 7 with the PubNub publish key and line 8 with PubNub subscribe key.
 
 ### Step 2 - Launch the app
 
-Launch the app as two separate browser tabs. For best results, choose two different browsers ( ex, Chrome and FIrefox) for this.
+Launch the app as two separate browser tabs. For best results, choose two different browsers ( ex, Chrome and Firefox) for this.
 
     http://localhost:8000/index.html
 
