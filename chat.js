@@ -1,6 +1,6 @@
 // ChatEngine = ChatEngineCore.create({
-//     publishKey: 'pub-c-5f66e0a7-e375-446d-b573-26939e3c6df8',
-//     subscribeKey: 'sub-c-e08856de-c90e-11e7-96a3-6a84acea123e'
+//     publishKey: '<PubNub Publish Key>',
+//     subscribeKey: '<PubNub Subscribe Key>'
 // });
 
 ChatEngine = ChatEngineCore.create({
