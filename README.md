@@ -70,7 +70,7 @@ We are all set now. Follow the steps below to set up the chat app and deploy it.
 
 Before launching the app, make sure to update the PubNub keys in the [chat.js](/chat.js) file.
 
-Update Line 7 with the PubNub publish key and line 8 with PubNub subscribe key.
+Update Line 4 with the PubNub publish key and line 5 with PubNub subscribe key.
 
 ### Step 2 - Launch the app
 
