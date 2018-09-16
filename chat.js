@@ -1,11 +1,8 @@
-// ChatEngine = ChatEngineCore.create({
-//     publishKey: '<PubNub Publish Key>',
-//     subscribeKey: '<PubNub Subscribe Key>'
-// });
+
 
 ChatEngine = ChatEngineCore.create({
-    publishKey: 'pub-c-27973a3a-de7b-4e77-ba35-7f006c0e1a40',
-    subscribeKey: 'sub-c-7c59f4da-ad3b-11e8-a4a4-da4a4ec5c754'
+    publishKey: '<PubNub Publish Key>',
+    subscribeKey: '<PubNub Subscribe Key>'
 });
 
 // use a helper function to generate a new profile
